@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "better_enchants",
+	"version": "${version}",
+	"name": "Better Enchant Books",
+	"description": "Fabric 1.21.11 selective port of Better Enchant Books. Author: 空栈的压入禁止.",
+	"authors": ["空栈的压入禁止"],
+	"contact": {
+		"sources": "https://github.com/114514-atri/betterenchant-fabric-1.21.11",
+		"issues": "https://github.com/114514-atri/betterenchant-fabric-1.21.11/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/better_enchants/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.betterenchants.BetterEnchantsMod"],
+		"client": ["com.betterenchants.client.BetterEnchantsClient"]
+	},
+	"mixins": [
+		"better_enchants.mixins.json",
+		{
+			"config": "better_enchants.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
