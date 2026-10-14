@@ -1,5 +1,7 @@
 # Better Enchant Books (Fabric 1.21.11)
 
+**GitHub（公开）:** https://github.com/114514-atri/betterenchant-fabric-1.21.11
+
 从本地 1.21.1 工程 `better-enchant-books` **选择性移植**附魔到 Minecraft **1.21.11 / Fabric**。
 
 当前仓库是可构建的脚手架：映射、依赖与数据包路径已搭好，附魔效果按需逐个搬迁。
